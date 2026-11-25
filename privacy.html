@@ -10,20 +10,21 @@
 <main>
   <a class="back" href="index.html">&larr; Back</a>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: October 23, 2026 · <a href="privacidad.html">Versión en español</a></p>
+  <p class="updated">Last updated: November 24, 2026 · <a href="privacidad.html">Versión en español</a></p>
 
   <p>Comesílabas: Aprende a Leer ("the app," "we") is an app that helps children ages 4 to 7 learn to read in Spanish. Because children use it, we designed it to collect nothing. This policy explains, in plain terms, what information the app handles and what it doesn't.</p>
 
   <h2>Summary</h2>
-  <p><strong>Comesílabas does not collect, transmit, or store personal data from anyone, neither the child nor their family.</strong> The app doesn't connect to any server of ours: the child's progress is stored only on the device itself, using iOS local storage (<code>UserDefaults</code>). We never see that information.</p>
+  <p><strong>Comesílabas does not collect, transmit, or store personal data from anyone, neither the child nor their family.</strong> The app doesn't connect to any server of ours: the child's progress is stored only on the device itself, using iOS local storage (<code>UserDefaults</code> and the Keychain). We never see that information.</p>
 
   <h2>What information stays on the device</h2>
   <ul>
     <li>The stars earned in each lesson along the path.</li>
     <li>The level reached in each game.</li>
-    <li>Whether the family has Comesílabas Pro and until when, so lessons open even when the device is offline.</li>
+    <li>Whether the family has Comesílabas Pro and until when, so lessons open even when the device is offline. This copy is kept in the device's Keychain.</li>
+    <li>Failed parental gate attempts and the resulting wait.</li>
   </ul>
-  <p>None of this data identifies the child or leaves the device. We don't keep copies anywhere.</p>
+  <p>None of this data identifies the child. We don't receive it or keep copies. If the family backs up their device, for example to iCloud, the progress may be part of their own backup; the Comesílabas Pro copy in the Keychain doesn't move to another device.</p>
 
   <h2>What the app never asks for</h2>
   <ul>
@@ -44,8 +45,10 @@
   <h2>How to delete the data</h2>
   <p>Since everything lives only on the device, the family is in full control:</p>
   <ul>
-    <li>In the app: <strong>Para papás (For parents) → Borrar progreso (Delete progress)</strong> deletes the stars and levels (Comesílabas Pro is not lost).</li>
-    <li>Uninstalling the app makes iOS permanently delete all of its data. Purchases aren't lost; they come back with "Restore purchases."</li>
+    <li>In the app: <strong>Para papás (For parents) → Borrar progreso (Delete progress)</strong> deletes the stars and levels (it doesn't delete Comesílabas Pro or the parental gate wait).</li>
+    <li>Uninstalling the app makes iOS delete the progress and the parental gate wait from the device. The Comesílabas Pro copy may remain in the Keychain; if the app is installed again, it deletes that copy on first launch and asks Apple again.</li>
+    <li>If a device backup is restored, the progress it contained may come back.</li>
+    <li>The purchase itself is kept by Apple and isn't lost: it comes back with "Restore purchases."</li>
   </ul>
   <p>Because we have no access to this information, we can't view, correct, or delete it from any server. Even so, you can write to us with any request about personal data (access, correction, deletion, or objection) and we will respond.</p>
 
